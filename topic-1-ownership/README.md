@@ -7,6 +7,22 @@ slices — using process-oriented examples from MiniOS, a userspace
 process-management and scheduling system that will grow across the
 semester's discussions.
 
+## Project Pitch
+
+MiniOS is a userspace process-management and scheduling system written in
+Rust. The system will be extended incrementally as new H230 topics are
+introduced.
+
+It is designed to naturally support the three required directions:
+
+- **Linked data structure:** a linked ready queue for runnable processes.
+- **Concurrent control flows:** scheduler, process-monitor, and other
+  components running concurrently using threads and synchronization.
+- **Client-server networking:** a TCP interface through which a separate
+  client can inspect or control MiniOS.
+
+For Topic 1, only the Rust ownership foundation is implemented.
+
 ## What was implemented
 
 A `Process` struct plus a small set of functions in [src/main.rs](src/main.rs)

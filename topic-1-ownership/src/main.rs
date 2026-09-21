@@ -35,8 +35,8 @@ fn inspect_and_return(name: String) -> String {
     name
 }
 
-/// `i32` implements `Copy`, so this receives a bitwise copy of the
-/// caller's value rather than taking ownership of it.
+/// `i32` implements `Copy`, so passing it by value implicitly copies
+/// the value and leaves the caller's original binding usable.
 fn inspect_capacity(capacity: i32) {
     println!("scheduler capacity: {capacity}");
 }
@@ -47,7 +47,7 @@ fn main() {
         name: String::from("compiler"),
     };
 
-    println!("{process:?}");
+    println!("pid={} name={}", process.pid, process.name);
 }
 
 #[cfg(test)]
