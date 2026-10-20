@@ -15,3 +15,5 @@ repository; this repo holds public, per-topic snapshots for discussion.
 ## Weeks
 
 - [Topic 1 — Ownership](topic-1-ownership/README.md)
+- [Topic 2 — Bit Flags and Endianness](topic-2-bitflags/README.md)
+- [Topic 3 — Structs and Lifetimes](topic-3-lifetimes/README.md)
